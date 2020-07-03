@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Mentor Story</title>
+
+<!-- Fonts Online -->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+<!-- Style Sheet -->
+<link rel="stylesheet" href="../../static/css/owl.carousel.css">
+<link rel="stylesheet" href="../../static/css/style.css">
+<link rel="stylesheet" href="../../static/css/main-style.css">
+<link rel="stylesheet" href="../../static/css/style.css">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<!-- Nav Tabs -->
+<div class="col-md-12">
+    <ul class="nav nav-tabs">
+        <li><a href="{% url 'mentee_dashboard' user %}">Profile</a></li>
+        <li><a href = "">Projects</a></li>
+        <li><a href={% url 'mentee_update' %}>Update Profile</a></li>
+        <li><a href="">Offer Project</a></li>
+        <li><a data-toggle="tab" href="#blog-tab">Blog Posts</a></li>
+        <li><a data-toggle="tab" href="#Con-tab">Connections</a></li>
+        <li><a data-toggle="tab" href="#flowrs-tabs">Followers (241)</a></li>
+        <li><a data-toggle="tab" href="#foll-tabs">Following</a></li>
+    </ul>
+</div>

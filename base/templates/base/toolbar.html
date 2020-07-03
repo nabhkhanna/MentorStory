@@ -1,0 +1,41 @@
+
+<body>
+{% load social_share %}
+
+
+  <!-- Top Toolbar -->
+  <div class="toolbar">
+    <div class="uou-block-1a blog">
+      <div class="container">
+        <div class="search"> <a href="#" class="toggle fa fa-search"></a>
+          <form action="#">
+            <input type="text" class="search-input" placeholder="Search ...">
+            <input type="submit" value="">
+          </form>
+        </div>
+        <ul class="social">
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-google-plus"></a></li>
+        </ul>
+        <ul class="authentication">
+            {% if user.is_authenticated %}
+                <li>Hello {{ user }}</li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% else %}
+                <li><a href="{% url 'login' %}">Login</a></li>
+                <li><a href="{% url 'register' %}">Register</a></li>
+            {% endif %}
+        </ul>
+        <div class="language"> <a href="#" class="toggle"><img src="images/flags/32/US.png" alt=""> ENG</a>
+          <ul>
+            <li><a href="#"><img src="images/flags/32/PT.png" alt=""> ENG</a></li>
+            <li><a href="#"><img src="images/flags/32/FR.png" alt=""> FR</a></li>
+            <li><a href="#"><img src="images/flags/32/ES.png" alt=""> ES</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- end .uou-block-1a -->
+  </div>
+  <!-- end toolbar -->
