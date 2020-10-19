@@ -24,6 +24,7 @@ Features:
 * Users can set up their user profile, edit user profile, add photos
 * A mentor can create and  offer projects, update and delete projects(Basic CRUD functionality)
 * A mentee can search for projects and mentors with filtering
+* Mentors and mentees can follow each other
 
 A list of commonly used resources that I find helpful are listed in the acknowledgements.
 
