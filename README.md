@@ -19,6 +19,9 @@
 
 A social platform where mentors and mentees can get in touch with each other. 
 
+About the structure:
+* Base directory includes the code and the static files
+
 Features:
 * Users can Register, Log-in and log-out
 * Users can set up their user profile, edit user profile, add photos
